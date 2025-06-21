@@ -1,0 +1,19 @@
+ol{
+    list-style: none;
+    counter-reset: contador; /* resetea el contador cada vez que usemos el tipo de listas ordenadas */
+}
+
+ol li{
+    counter-increment: contador; /* incrementa el valor en 1 */
+}
+
+ol li::before{ /* ::before(a esto se le conoce como selector, agrega algo antes del contenido) */
+    content:'Curso' counter(contador) ') '; /* counter(name) =agrega la funcion de contador, esto agrega de manera automatica */
+    color: #ff6f00;
+}
+
+ol li::after{ /* ::after(agrega algo despues del contenido */
+    content: '.';
+}
+
+

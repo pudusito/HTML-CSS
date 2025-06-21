@@ -1,0 +1,27 @@
+h1{
+    color: blue}
+
+a:link{color: #f78a0d;text-decoration: none;}
+
+a:visited{
+    color: black;text-decoration: none !important;}
+
+a:hover{
+    color:#8ecae6; 
+    text-decoration: underline;}
+
+
+
+/* Enlaces (<a>):
+Se utilizan diferentes pseudo-clases para estilizar los enlaces según su estado.
+
+/* 
+a:link: Aplica estilos a los enlaces no visitados (que aún no han sido clickeados). (color por defecto:blue)
+a:visited: Aplica estilos a los enlaces que ya han sido visitados. (color por defecto: morado)
+a:hover: Aplica estilos cuando el usuario pasa el mouse sobre el enlace.
+estado de link activo por defecto sin soltar el click= red
+
+text-decoration: none (elimina decoraciones como el subrayado)
+El uso de !important forzará que estos estilos se apliquen, aunque es mejor evitarlo a menos que sea estrictamente necesario.
+*/
+

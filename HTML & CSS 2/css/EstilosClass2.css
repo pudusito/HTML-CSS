@@ -1,0 +1,40 @@
+*{/*esto indica que se aplicara a toda la pagina HTML */      
+    margin: 0;
+    padding: 0;                                         
+}
+
+.titulo{
+    color: #f72585;
+    text-align: center;
+    margin: 50px;
+
+}
+
+h2{
+    color: #3f37c9;
+}
+
+p{
+    color: brown
+}
+
+.tarjeta{
+    border:10px solid #560bad;
+    background-color: #f1faee;
+    text-align: center;
+    margin:15px 115px;
+    padding:10px;
+}
+
+.titulo_2{
+    color: #3f37c9
+
+}
+
+
+/* se puede cambiar los elementos directamente desde la pagina web dandole en *select an element in the pago to inspect it - ctrl+ shift + c (cuadrado con flecha/mouse)
+
+luego seleccionar el elemento a cambiar y apareceran los estilos, dandole flecha hacia arriba o abajo al elemento permite cambiar el px.
+
+esto solo permite visualizar, cambiar los valores que prefiramos en este documento. */
+

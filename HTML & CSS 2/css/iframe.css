@@ -1,0 +1,28 @@
+.titulo{
+    color:#f72585;
+    text-align: center;
+}
+
+.marco{
+    width: 100%;
+    height: 200px;
+    /*border: none;*/
+    border: 1px solid #f72585;
+}
+
+.center{
+    text-align: center;
+}
+
+.boton{
+    background-color: white;
+    border:2px solid blueviolet;
+    text-decoration: none;
+    display: inline-block;/* al estar dentro de un div, esto fuerza a que sea un block*/
+    padding:10px;
+}
+
+.boton:hover{
+    background-color: blueviolet;
+    color: white;
+}

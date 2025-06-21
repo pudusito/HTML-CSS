@@ -1,0 +1,7 @@
+*live server
+*live server preview
+
+*prettier - code formatter
+*path intellisence
+
+*css peek (nos permite seleccionar mas facilmente los elemento tipo id y class de html)

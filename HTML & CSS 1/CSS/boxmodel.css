@@ -1,0 +1,43 @@
+h1{color:blue;background-color: #e63946;text-align: center}
+
+p{
+    color: black;
+    background-color: #e63946;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 50px 200px;
+    text-align: center;
+
+}
+
+
+/* esto es un comentario de css */
+
+/* margin-border-padding-content= top/right/bottom/left.
+
+
+    *margin(el margen no es para establecer color, 
+    solo para agregar un espacio entre los elementos html.
+
+    *esto lo podemos visualizar con el inspeccionar del navegador, 
+    styles al final.
+
+
+1valor= all
+2valor= top/bottom -- right/left
+valores individuales= margin-top: 10px;
+                      margin-right: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 10px;
+                      o
+                      margin: 10px 10px 10px 10px
+
+                    
+centrar elementos de manera automatica horizontal= margin:auto 30px
+                     
+centrar texto= text-align: center;
+
+
+*/
+
+/*pd: combinacion paletas de colores html preestablecidas: coolors.co */

@@ -1,0 +1,55 @@
+🧩 Recordatorio: Hacer CSS accesible para todo tipo de usuarios
+Al diseñar estilos con CSS, es fundamental considerar la diversidad de capacidades de los usuarios. La accesibilidad no es un extra, sino una responsabilidad. A continuación, se detallan aspectos clave para incluir en tus diseños:
+
+🎨 Usuarios con daltonismo
+Utiliza esquemas de colores con contraste suficiente.
+
+No dependas exclusivamente del color para comunicar información (usa texto, íconos o patrones).
+
+Verifica la accesibilidad de colores con herramientas como simuladores de visión o contrast checkers.
+
+⚡ Usuarios con epilepsia fotosensible
+Evita animaciones parpadeantes o efectos visuales intermitentes, especialmente aquellos que se repiten más de 3 veces por segundo.
+
+Implementa la regla CSS @media (prefers-reduced-motion) para que los usuarios puedan desactivar animaciones si lo desean.
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+🧠 Usuarios con dificultades cognitivas o autismo
+
+Reduce la sobrecarga visual: evita diseños recargados, colores brillantes en exceso o movimientos innecesarios.
+
+Usa una jerarquía clara: títulos, listas, espacios adecuados entre elementos y una estructura visual coherente.
+
+🧏 Usuarios con discapacidad auditiva
+Aunque CSS no controla el audio, puede apoyar mediante:
+
+Subtítulos visibles para contenidos multimedia.
+
+Indicadores visuales (íconos, texto, señales visuales) que acompañen sonidos o alertas importantes.
+
+👁️ Usuarios con discapacidad visual
+Usa tamaños de fuente adecuados y line-height suficiente para mejorar la lectura.
+
+Emplea unidades relativas (em, rem) para que el contenido pueda escalar correctamente con el zoom del navegador.
+
+Evita fuentes decorativas o difíciles de leer. Opta por tipografías limpias y legibles.
+
+Asegura que la estructura visual no se rompa al aumentar el tamaño del texto.
+
+✅ Recomendación general
+Siempre prueba tu sitio con herramientas de accesibilidad, como:
+
+Simuladores de visión.
+
+Verificadores de contraste.
+
+Lectores de pantalla.
+
+Y recuerda: un diseño accesible beneficia a todos los usuarios, no solo a quienes presentan una discapacidad.

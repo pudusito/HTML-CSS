@@ -1,0 +1,36 @@
+*{ 
+    margin: 0;
+    padding: 0;                                         
+}
+
+#titulo_principal{ /*esto es un identificador css unico, no debe repetirse dentro de html*/
+    color: #f72;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.titulo{
+    color: red;
+}
+
+h2{
+    color: #3f37c9;
+}
+
+p{
+    color: brown
+}
+
+.tarjeta{
+    border:10px solid #560bad;
+    background-color: #f1faee;
+    text-align: center;
+    margin:15px 115px;
+    padding:10px;
+}
+
+.titulo_2{
+    color: #3f37c9
+
+}

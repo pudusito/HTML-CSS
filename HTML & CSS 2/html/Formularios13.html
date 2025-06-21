@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form en html</title>
+</head>
+<body>
+    <h1>Formularios en html</h1>
+
+    <form method="post">  <!--action:se pone la ip o puerto- target:_self(Carga dentro de la misma ventana);_blank(nueva ventana)-->
+        <fieldset><!--crea un marco para todo el formulario-->
+            <legend>Datos de persona:</legend><!--crea un titulo al marco del formulario-->
+
+            <label for="nombre">Nombre:</label> </br>
+            <input type="text" id="nombre" name="nombre" value="Benjamin" />
+        </br>
+            <label for="apellido">Apellido:</label> </br>
+            <input type="text" id="apellido" name="apellido" placeholder="escribe tu apellido" required="true"/>
+        </br>
+            <label for="email">Email:</label> </br>
+            <input type="email" id="email" name="email" placeholder="ingresa tu email" required="true"/> <!-- type email captura caracteres especiales como @-->
+        </br>
+            <label for="password">Contraseña:</label> </br>
+            <input type="password" id="contraseña" name="contraseña" required="true"/>
+        </br>
+            <label for="edad">Edad:</label> </br>
+            <input type="number" id="edad" name="edad" step="any" /> <!-- step any captura cualquier numero numerico, como decimales-->
+
+
+        </br>
+            <label>Genero</label> </br>
+            <input type="radio" id="femenino" name="genero" value="Femenino" /> <!--el value es lo que se envia al servidor-->
+            <label for="femenino"> Femenino</label> </br>
+            <input type="radio" id="masculino" name="genero" value="Masculino" /> <!-- si tienen el mismo name, solo se selecciona 1-->
+            <label for="masculino"> Masculino</label> </br>
+            <input type="radio" id="binario" name="genero" value="Binario" />
+            <label for="binario">Helicoptero de combate binario</label>
+        </br>
+            <label>Musica favorita</label> </br>
+            <input type="checkbox" id="Clasica" name="musica" value="clasica"/>
+            <label for="Clasica">clasica</label> </br>
+            <input type="checkbox" id="Jazz" name="musica" value="jazz"/>
+            <label for="Jazz">jazz</label> </br>
+            <input type="checkbox" id="Reggaeton" name="musica" value="reggaeton"/>
+            <label for="Reggaeton">reggaeton</label> </br>
+
+            <label for="autos">Marca auto favorita:</label> </br>
+            <select id="autos" name="autos">
+                <option value="ferrari">Ferrari</option> 
+                <option value="bmw" selected="true">Bmw</option>
+                <option value="audi">Audi</option>
+            </select>
+        </br>
+            <label for="comentario">Comentario</label> </br>
+            <textarea id="comentario" name="comentario" rows="2" cols="30">Este es mi comentario</textarea>
+        
+        </br>
+            <label for="file">File selector</label> </br>
+            <input type="file">
+
+        </br>
+        
+        </br>
+            <label for="botonsito">Botones:</label>
+            <input type="button" id="boton_1" name="boton" value="boton type"/>
+            <button id= "boton_2">boton button</button>
+        </br>
+        </br>
+        </br>
+            <input type="submit" value="enviar"/>
+            <input type="submit" formnovalidate="formnovalidate" value="enviar sin validar"/>
+            <input type="reset" value="restablecer" />
+
+
+    </fieldset><!-- cierre de marco-->    
+    </form>
+    <script src="/js/javascript.js"> </script>
+</body>
+</html>
+
+<!-- 
+*si el elemento ira a algun lugar ej:servidor, sera tipo submit.
+*para visualizar el valor del atributo en la url y asi captarlo con la base de dato es necesario asignarle un nombre, suele ser el mismo que el identificador.
+*for nos permitira que al hacer click en el label, nos envie al input.
+*value nos dara un valor por defecto dentro de la caja del input.
+*placeholder nos permite decirle al usuario que valor tiene que agregar.
+*validacion de formulario:
+-required="true" logra que si el campo esta vacio, no envie nada a la bd(nos pide que completemos el campo)
+-<form novalidate> hace que todo los campos sean requeridos para validar
+-<input type="submit" formnovalidate="formnovalidate" value="enviar sin validar"/> crea un boton que envia sin validar
+
+-->
+
+<!--
+
+***query string, metodo get y post para envio de datos en protocolo http***
+-Se utilizan para enviar información desde un cliente (generalmente un navegador) a un servidor, 
+ principalmente en aplicaciones web. A continuación, explico cada uno:
+
+GET:(metodo por defecto)
+     Envía datos como parte de la URL (visibles en la barra de direcciones). 
+     Se usa para consultas o búsquedas donde los datos no son sensibles. 
+     Limitado en tamaño y es idempotente (no cambia el estado del servidor).
+
+POST: 
+      Envía datos en el cuerpo de la solicitud (más privado). 
+      Se usa para operaciones que modifican datos en el servidor (como formularios). 
+      Sin límite de tamaño y no es idempotente.
+-->
+
+<!-- diferencia entre type= radio y checkbox:
+ radio: se suele utilizar para solo seleccionar 1.
+ checkbox: se suele utilizar para marcar varios.
+
+
+-->
+
+<!--
+El atributo TYPE: 
+en HTML se usa principalmente para especificar el tipo de control de entrada que se mostrará en un elemento <input>. 
+Este atributo determina cómo se debe interpretar y validar la entrada del usuario por parte del navegador.
+
+inputs:
+type="text": Crea un campo de texto de una sola línea. Es el valor por defecto si no se especifica el atributo type. 
+type="password": Crea un campo de contraseña, donde el texto ingresado se oculta (por ejemplo, con asteriscos). 
+type="email": Crea un campo para direcciones de correo electrónico, a menudo con validación básica para asegurar que el formato sea correcto. 
+type="number": Crea un campo para ingresar números, a veces con controles para aumentar o disminuir el valor. 
+
+archivos:
+type="file": Permite al usuario seleccionar uno o más archivos desde su dispositivo. 
+
+casillas:
+type="checkbox": Crea una casilla de verificación para seleccionar opciones. 
+type="radio": Crea una casilla de opción para seleccionar una sola opción de un grupo. 
+
+botones:
+type="button": Crea un botón que puede ser utilizado para desencadenar acciones con JavaScript. 
+type="submit": Crea un botón que, al presionarse, envía el formulario. 
+type="reset": crea un boton para reestablecer lo ingresado en el formulario.
+
+
+La principal diferencia entre <button> y <input type="button"> 
+radica en su flexibilidad y capacidad de contenido,Aunque ambos se usan para crear botones:
+
+# <button> permite incluir contenido HTML dentro, como texto o imágenes.(elemento semantico)
+# <input type="button"> solo puede contener texto plano.(elemento de formulario)
+
+-->
+
+
