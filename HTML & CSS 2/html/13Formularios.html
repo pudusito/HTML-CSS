@@ -15,8 +15,12 @@
             <label for="nombre">Nombre:</label> </br>
             <input type="text" id="nombre" name="nombre" value="Benjamin" />
         </br>
-            <label for="apellido">Apellido:</label> </br>
-            <input type="text" id="apellido" name="apellido" placeholder="escribe tu apellido" required="true"/>
+            <div style="display: flex; justify-content: flex-end;">
+              <div>
+                <label for="apellido">Apellido:</label> </br>
+                <input type="text" id="apellido" name="apellido" placeholder="escribe tu apellido" required="true"/>
+              </div>
+            </div>
         </br>
             <label for="email">Email:</label> </br>
             <input type="email" id="email" name="email" placeholder="ingresa tu email" required="true"/> <!-- type email captura caracteres especiales como @-->
@@ -27,7 +31,7 @@
             <label for="edad">Edad:</label> </br>
             <input type="number" id="edad" name="edad" step="any" /> <!-- step any captura cualquier numero numerico, como decimales-->
 
-
+        </br>
         </br>
             <label>Genero</label> </br>
             <input type="radio" id="femenino" name="genero" value="Femenino" /> <!--el value es lo que se envia al servidor-->
@@ -37,6 +41,7 @@
             <input type="radio" id="binario" name="genero" value="Binario" />
             <label for="binario">Helicoptero de combate binario</label>
         </br>
+        </br>
             <label>Musica favorita</label> </br>
             <input type="checkbox" id="Clasica" name="musica" value="clasica"/>
             <label for="Clasica">clasica</label> </br>
@@ -44,7 +49,7 @@
             <label for="Jazz">jazz</label> </br>
             <input type="checkbox" id="Reggaeton" name="musica" value="reggaeton"/>
             <label for="Reggaeton">reggaeton</label> </br>
-
+        </br>
             <label for="autos">Marca auto favorita:</label> </br>
             <select id="autos" name="autos">
                 <option value="ferrari">Ferrari</option> 
@@ -52,20 +57,20 @@
                 <option value="audi">Audi</option>
             </select>
         </br>
+        </br>
             <label for="comentario">Comentario</label> </br>
             <textarea id="comentario" name="comentario" rows="2" cols="30">Este es mi comentario</textarea>
-        
+        </br> 
         </br>
             <label for="file">File selector</label> </br>
             <input type="file">
+        </br>
+        </br>
+        </br>
+            <label>Botones:</label>
+            <input type="button" id="boton_1" name="boton" value="boton type"/> <!-- boton con input-->
 
-        </br>
-        
-        </br>
-            <label for="botonsito">Botones:</label>
-            <input type="button" id="boton_1" name="boton" value="boton type"/>
-            <button id= "boton_2">boton button</button>
-        </br>
+            <button id= "boton_2">boton button</button> <!-- boton con button-->
         </br>
         </br>
             <input type="submit" value="enviar"/>
@@ -73,11 +78,24 @@
             <input type="reset" value="restablecer" />
 
 
+
     </fieldset><!-- cierre de marco-->    
     </form>
-    <script src="/js/javascript.js"> </script>
+    <script src="/js/13formulario.js"> </script>
 </body>
 </html>
+
+
+<!--  
+El atributo for="xd" solo funciona con elementos de formulario que pueden recibir foco o entrada de datos directamente, como:
+<input>
+<textarea>
+<select>
+
+este se asocia con el id="xd
+"
+
+-->
 
 <!-- 
 *si el elemento ira a algun lugar ej:servidor, sera tipo submit.

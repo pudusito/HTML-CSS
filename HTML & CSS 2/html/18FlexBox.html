@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Flexbox Completo</title>
+<!--  <style>
+    /* Contenedor flex */
+    .contenedor {
+      display: flex;               /* activa Flexbox */
+      flex-direction: row;         /* items en fila (default) */
+      justify-content: space-around; /* espacio entre items */
+      align-items: flex-start;     /* alineación vertical al inicio */
+      height: 150px;               /* para que se note el align-self */
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* Estilo general de cada item */
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+      flex: 1;                    /* para que crezcan igual */
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    /* Item con estilo especial */
+    .especial {
+      background-color: #2196F3;
+    }
+
+    /* Item con alineación individual (equivalente a align-self: flex-end) */
+    .item-flex-end {
+      background-color: #212221;
+      color: red;
+      align-self: flex-end;       /* solo este item se alinea abajo */
+    }
+  </style> //esto no es necesario ya que lo insertaremos desde css con link.--> 
+  <link href="/css/18Flexboxcss.css" rel="stylesheet"/>
+  
+</head>
+<body>
+
+  <h2>Ejemplo de Flexbox Completo</h2>
+
+  <div class="contenedor">
+    <div class="item">Item 1</div>
+    <div class="item especial">Item 3 (align-self)</div>
+    <div class= "item" style="align-self: flex-end; background-color: #212221; color: red;">Item 5</div>
+  </div>
+
+</body>
+</html>
+
+

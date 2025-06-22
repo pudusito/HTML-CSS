@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura: Etiquetas semánticas en HTML</title>
+    <link href="\css\ElementosSemanticos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Etiquetas semánticas en HTML</h1>
+    </header>
+    <nav>
+        <a href="17DOM.html">Inicio</a>
+        <a href="13Formularios.html">Servicios</a>
+    </nav>
+    <section>
+        <h2 class="titulo">Sección 1</h2>
+        <p>Información de la sección 1</p>
+        <aside>
+            <p>Nombre del Autor</p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Sección 2</h2>
+        <p>parrafo de la seccion 2</p>
+        <article>
+            <h3>Artículo 2</h3>
+        </article>
+        <article>
+            <h3>Artículo 3</h3>
+        </article>
+    </section>
+
+    <section style="background-color: aqua;">
+    <h3 style="color:red">Boton con js embebido:</h3>
+    <button id= "buttom">presiona aqui</button>
+    </section>
+    <script>
+        const boton = "seleccionaste el boton con Script embebido en HTML"
+        function alertaboton(){
+            alert(boton);
+        }
+        document.getElementById('buttom').addEventListener('click',alertaboton);      
+    </script>   
+
+    <section>
+        <h3 style="color:red">Boton con js importado:</h3>
+        <button id= "boton">presiona aqui</button>
+    </section>
+
+    <section style="background-color:yellow" id="seccion">
+        <h2 class="javascript">section con js !!en el area amarilla!!</h2>
+            <p>aqui mostraremos como codigo de JS es insertado en HTML</p>
+    </section>
+
+    <script src= "/js/17DOM.js"></script> <!-- aqui le entregamos el js.--> 
+ 
+    
+    <footer>
+        <h2> **--
+            <a href="https://m.animeflv.net/anime/naruto-shippuden-hd">
+               <ins>Naruto Shippuden anime</ins> <!-- ins solo subraya el texto-->
+            </a>
+             --**
+        </h2>
+    </footer>
+</body>
+</html>

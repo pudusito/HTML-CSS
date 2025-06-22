@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+.contenedor {
+  display: flex;
+  flex-direction: row;       /* Cambia a column para ver cambios */
+  flex-wrap: wrap;            /* wrap, nowrap, wrap-reverse */
+  justify-content: space-evenly; /* Prueba otras opciones */
+  align-items: center;        /* Prueba: stretch, flex-start, etc */
+  align-content: center;      /* Aplica cuando hay múltiples líneas */
+  gap: 10px;                  /* Espacio entre todos los ítems */
+  min-height: 60vh;
+  border: 2px dashed #666;
+  padding: 10px;
+  background-color: #fff;
+}
+.item {
+  flex: 1 1 150px;           /*  grow shrink basis */
+  order: 0;                   /* Cambia para reordenar */
+  align-self: auto;          /* Prueba: flex-end, center, etc */
+  background-color: #2196F3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+.especial {
+  align-self: flex-end;      /* Este ítem ignora align-items */
+  background-color: #4CAF50;
+}
+
+
+/*
+## Activa Flexbox CSS.
+display: flex;
+
+## Dirección del eje principal:
+flex-direction: row;            Fila horizontal (por defecto) 
+flex-direction: row-reverse;   /Fila inversa 
+flex-direction: column;         Columna vertical 
+flex-direction: column-reverse; Columna inversa 
+
+## Permite que los elementos salten de línea:
+flex-wrap: nowrap;              Por defecto, todo en una sola línea 
+flex-wrap: wrap;                Permite que bajen a la siguiente línea 
+flex-wrap: wrap-reverse;        Salto de línea en orden inverso 
+
+## Shorthand para dirección + envoltura:
+flex-flow: row wrap;            Combina dirección y envoltura 
+
+## Alinea horizontalmente (Eje X - eje principal)
+justify-content: flex-start;     Alinea a la izquierda (por defecto) 
+justify-content: flex-end;       Alinea a la derecha 
+justify-content: center;         Centra horizontalmente 
+justify-content: space-between;  Espacio entre los elementos 
+justify-content: space-around;   Espacio alrededor de los elementos 
+justify-content: space-evenly;   Espacio equitativo entre y fuera 
+
+## Alinea verticalmente (Eje Y - eje cruzado)
+align-items: stretch;      Por defecto, estira los elementos 
+align-items: flex-start;   Alinea arriba 
+align-items: flex-end;     Alinea abajo 
+align-items: center;       Centra verticalmente 
+align-items: baseline;     Alinea según la línea base del texto 
+
+## Alinea múltiples líneas verticalmente (cuando hay wrap)
+align-content: stretch;         Por defecto 
+align-content: flex-start;      Agrupa líneas arriba 
+align-content: flex-end;        Agrupa líneas abajo 
+align-content: center;          Centra líneas verticalmente 
+align-content: space-between;   Espacio entre líneas 
+align-content: space-around;    Espacio alrededor de líneas 
+align-content: space-evenly;    Espacio equitativo entre líneas 
+
+## Espacio entre elementos
+gap: 10px;                       Espacio general 
+row-gap: 10px;                  Espacio entre filas 
+column-gap: 10px;               Espacio entre columnas 
+
+## Propiedades para cada ítem:
+order: 0;                       Orden (por defecto) 
+
+flex-grow: 0;                   Cuánto puede crecer (por defecto) 
+flex-shrink: 1;                 Cuánto puede encogerse (por defecto) 
+flex-basis: auto;               Tamaño inicial (auto, px, %, etc) 
+
+flex: 1 0 100px;                Shorthand: grow shrink basis 
+
+## Alinea un solo elemento (ignora align-items):
+align-self: auto;               Por defecto 
+align-self: flex-start;         Alinea arriba 
+align-self: flex-end;           Alinea abajo 
+align-self: center;             Centra verticalmente 
+align-self: baseline;           Alinea con la línea base 
+align-self: stretch;            Estira verticalmente 
+
+*/
+
+/*
+ En VS Code, para seleccionar todas las ocurrencias del texto que tienes seleccionado, puedes usar:
+
+ Windows/Linux: Ctrl + Shift + L 
+
+*/
