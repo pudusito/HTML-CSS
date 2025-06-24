@@ -5,3 +5,6 @@
 *path intellisence
 
 *css peek (nos permite seleccionar mas facilmente los elemento tipo id y class de html)
+
+
+PowerToys(preview) app para seleccionar colores
